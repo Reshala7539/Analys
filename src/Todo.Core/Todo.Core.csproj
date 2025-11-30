@@ -7,11 +7,11 @@
 
 		<Version>1.0.0</Version>
 
-		<Authors>Reshala5739</Authors>
-		<Company>Reshala5739</Company>
+		<Authors>Reshala7539</Authors>
+		<Company>Reshala7539</Company>
 		<Description>Todo.Core library</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl>https://github.com/Reshala5739/Analys</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Reshala7539/Analys</RepositoryUrl>
 
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
