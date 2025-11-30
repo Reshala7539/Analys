@@ -52,18 +52,19 @@ jobs:
             <packageSourceCredentials>
               <github>
                 <add key="Username" value="Reshala7539" />
-                <add key="ClearTextPassword" value="${GH_PACKAGES_PAT}" />
+                <add key="ClearTextPassword" value="${{ secrets.GH_PACKAGES_PAT }}" />
               </github>
             </packageSourceCredentials>
           </configuration>
           EOF
+
         env:
           GH_PACKAGES_PAT: ${{ secrets.GH_PACKAGES_PAT }}
 
       - name: Push to GitHub Packages
         run: |
           dotnet nuget push "./artifacts/*.nupkg" \
-            --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
-            --api-key ${{ secrets.GITHUB_TOKEN }} \
+            --source "github" \
+            --api-key "${{ secrets.GH_PACKAGES_PAT }}" \
             --skip-duplicate
 
