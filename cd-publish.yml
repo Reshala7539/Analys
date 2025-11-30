@@ -47,11 +47,11 @@ jobs:
           <?xml version="1.0" encoding="utf-8"?>
           <configuration>
             <packageSources>
-              <add key="github" value="https://nuget.pkg.github.com/Reshala5739/index.json" />
+              <add key="github" value="https://nuget.pkg.github.com/Reshala7539/index.json" />
             </packageSources>
             <packageSourceCredentials>
               <github>
-                <add key="Username" value="Reshala5739" />
+                <add key="Username" value="Reshala7539" />
                 <add key="ClearTextPassword" value="${GH_PACKAGES_PAT}" />
               </github>
             </packageSourceCredentials>
