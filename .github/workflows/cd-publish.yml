@@ -66,4 +66,3 @@ jobs:
             --configfile nuget.config \
             --source "github" \
             --skip-duplicate \
-            -v detailed
